@@ -1,6 +1,6 @@
 ﻿namespace DataStructures.Arrays
 {
-    class Arrays_DS
+    class Arrays2D
     {
         static int[] ReverseArray(int[] a)
         {
