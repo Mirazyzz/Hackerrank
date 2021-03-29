@@ -1,6 +1,6 @@
 ﻿namespace DataStructures.Arrays
 {
-    class Solution
+    class Arrays2D
     {
         static int HourglassSum(int[][] arr)
         {
