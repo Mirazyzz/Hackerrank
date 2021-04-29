@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace DataStructures.Arrays
 {
@@ -35,8 +34,6 @@ namespace DataStructures.Arrays
                     result[index] = arr[i];
                 }
             }
-
-            foreach (int i in result) Console.Write(i + " ");
 
             return result;
         }
