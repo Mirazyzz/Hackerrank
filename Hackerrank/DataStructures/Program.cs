@@ -1,6 +1,4 @@
-﻿using DataStructures.Arrays;
-using System;
-using System.Collections.Generic;
+﻿using DataStructures.Linked_Lists;
 
 namespace DataStructures
 {
@@ -8,11 +6,9 @@ namespace DataStructures
     {
         static void Main(string[] args)
         {
-            LeftRotation.RotateLeft(4, new List<int>
-            {
-                1, 2, 3, 4, 5
-            });
+            var node = new SinglyLinkedListNode(141);
 
+            InsertNodeAtTail.InsertNodeTail(node, 302);
         }
     }
 }
