@@ -7,8 +7,6 @@ namespace DataStructures
         static void Main(string[] args)
         {
             var node = new SinglyLinkedListNode(141);
-
-            InsertNodeAtTail.InsertNodeTail(node, 302);
         }
     }
 }
