@@ -6,7 +6,21 @@ namespace DataStructures
     {
         static void Main(string[] args)
         {
-            var node = new SinglyLinkedListNode(141);
+            var head = new SinglyLinkedListNode(1)
+            {
+                next = new SinglyLinkedListNode(2)
+                {
+                    next = new SinglyLinkedListNode(3)
+                    {
+                        next = new SinglyLinkedListNode(4)
+                        {
+                            next = new SinglyLinkedListNode(5)
+                        }
+                    }
+                }
+            };
+
+            PrintReverse.Reverse(head);
         }
     }
 }
