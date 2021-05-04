@@ -1,22 +1,16 @@
-﻿namespace DataStructures.Linked_Lists
+﻿using System;
+
+namespace DataStructures.Linked_Lists
 {
     class PrintReverse
     {
-        public static SinglyLinkedListNode Reverse(SinglyLinkedListNode head)
+        public static void Print(SinglyLinkedListNode head)
         {
-            SinglyLinkedListNode temp = head;
-            SinglyLinkedListNode reversed = null;
-            SinglyLinkedListNode next = null;
+            if (head == null) return;
 
-            while (temp != null)
-            {
-                next = temp.next;
-                temp.next = reversed;
-                reversed = temp;
-                temp = next;
-            }
+            Print(head.next);
 
-            return reversed;
+            Console.WriteLine(head.data);
         }
     }
 }
