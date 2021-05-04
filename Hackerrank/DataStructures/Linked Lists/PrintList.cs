@@ -4,7 +4,7 @@ namespace DataStructures.Linked_Lists
 {
     class PrintList
     {
-        public static void PrintLinkedList(SinglyLinkedListNode head)
+        public static void PrintLinkedList(SinglyLLNode head)
         {
             while (head != null)
             {

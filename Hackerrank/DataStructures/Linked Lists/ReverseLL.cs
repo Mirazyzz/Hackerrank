@@ -1,15 +1,15 @@
 ﻿namespace DataStructures.Linked_Lists
 {
-    class ReverseLinkedList
+    class ReverseLL
     {
-        public static SinglyLinkedListNode Reverse(SinglyLinkedListNode head)
+        public static SinglyLLNode Reverse(SinglyLLNode head)
         {
             var temp = head;
-            SinglyLinkedListNode reversed = null;
+            SinglyLLNode reversed = null;
 
             while(temp != null)
             {
-                SinglyLinkedListNode next = temp.next;
+                SinglyLLNode next = temp.next;
                 temp.next = reversed;
                 reversed = temp;
                 temp = next;
