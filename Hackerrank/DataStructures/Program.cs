@@ -20,7 +20,7 @@ namespace DataStructures
                 }
             };
 
-            PrintReverse.Reverse(head);
+            PrintReverse.Print(head);
         }
     }
 }

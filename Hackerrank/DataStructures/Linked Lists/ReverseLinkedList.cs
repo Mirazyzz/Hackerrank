@@ -1,11 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DataStructures.Linked_Lists
+﻿namespace DataStructures.Linked_Lists
 {
     class ReverseLinkedList
     {
+        public static SinglyLinkedListNode Reverse(SinglyLinkedListNode head)
+        {
+            var temp = head;
+            SinglyLinkedListNode reversed = null;
 
+            while(temp != null)
+            {
+                SinglyLinkedListNode next = temp.next;
+                temp.next = reversed;
+                reversed = temp;
+                temp = next;
+            }
+
+            return reversed;
+        }
     }
 }
