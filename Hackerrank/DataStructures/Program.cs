@@ -10,9 +10,9 @@ namespace DataStructures
             {
                 next = new SinglyLinkedListNode(2)
                 {
-                    next = new SinglyLinkedListNode(3)
+                    next = new SinglyLinkedListNode(2)
                     {
-                        next = new SinglyLinkedListNode(5)
+                        next = new SinglyLinkedListNode(3)
                         {
                             next = new SinglyLinkedListNode(8)
                         }
@@ -20,8 +20,13 @@ namespace DataStructures
                 }
             };
 
-            var res = GetNodeValue.GetNode(node, 3);
-            System.Console.WriteLine(res);
+            var res = DeleteDuplicateValues.RemoveDuplicates(node);
+
+            while(res != null)
+            {
+                System.Console.WriteLine(res.data);
+                res = res.next;
+            }
         }
     }
 }
