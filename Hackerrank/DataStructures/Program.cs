@@ -6,29 +6,22 @@ namespace DataStructures
     {
         static void Main(string[] args)
         {
-            var head = new SinglyLinkedListNode(1)
+            var node = new SinglyLinkedListNode(1)
             {
                 next = new SinglyLinkedListNode(2)
                 {
                     next = new SinglyLinkedListNode(3)
+                    {
+                        next = new SinglyLinkedListNode(5)
+                        {
+                            next = new SinglyLinkedListNode(8)
+                        }
+                    }
                 }
             };
 
-            var head2 = new SinglyLinkedListNode(1)
-            {
-                next = new SinglyLinkedListNode(3)
-                {
-                    next = new SinglyLinkedListNode(4)
-                }
-            };
-
-            var node = MergeTwoSortedLL.Merge(head, head2);
-
-            while(node != null)
-            {
-                System.Console.WriteLine(node.data);
-                node = node.next;
-            }
+            var res = GetNodeValue.GetNode(node, 3);
+            System.Console.WriteLine(res);
         }
     }
 }
