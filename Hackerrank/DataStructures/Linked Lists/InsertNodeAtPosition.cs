@@ -2,9 +2,9 @@
 {
     class InsertNodeAtPosition
     {
-        public static SinglyLLNode InsertNode(SinglyLLNode head, int data, int position)
+        public static SinglyLinkedListNode InsertNode(SinglyLinkedListNode head, int data, int position)
         {
-            if (head == null) return new SinglyLLNode(data);
+            if (head == null) return new SinglyLinkedListNode(data);
 
             int currentPosition = 1;
             var temp = head;
@@ -15,7 +15,7 @@
                 currentPosition++;
             }
 
-            var newNode = new SinglyLLNode(data);
+            var newNode = new SinglyLinkedListNode(data);
             newNode.next = temp.next;
             temp.next = newNode;
 

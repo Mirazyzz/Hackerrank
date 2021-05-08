@@ -1,6 +1,6 @@
 ﻿namespace DataStructures.Linked_Lists
 {
-    class CompareTwoLinkedLists
+    class CompareTwoLL
     {
         public static bool Compare(SinglyLinkedListNode head1, SinglyLinkedListNode head2)
         {

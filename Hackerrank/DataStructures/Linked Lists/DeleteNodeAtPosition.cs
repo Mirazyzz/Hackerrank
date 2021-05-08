@@ -2,7 +2,7 @@
 {
     class DeleteNodeAtPosition
     {
-        public static SinglyLLNode DeleteNode(SinglyLLNode head, int position)
+        public static SinglyLinkedListNode DeleteNode(SinglyLinkedListNode head, int position)
         {
             if (position == 0) return head.next;
 

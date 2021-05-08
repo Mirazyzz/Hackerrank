@@ -2,11 +2,11 @@
 {
     class InsertNodeAtHead
     {
-        public static SinglyLLNode InsertNode(SinglyLLNode node, int data)
+        public static SinglyLinkedListNode InsertNode(SinglyLinkedListNode node, int data)
         {
-            if (node == null) return new SinglyLLNode(data);
+            if (node == null) return new SinglyLinkedListNode(data);
 
-            return new SinglyLLNode(data).next = node;
+            return new SinglyLinkedListNode(data).next = node;
         }
     }
 }

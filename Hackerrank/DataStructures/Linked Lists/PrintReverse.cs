@@ -4,7 +4,7 @@ namespace DataStructures.Linked_Lists
 {
     class PrintReverse
     {
-        public static void Print(SinglyLLNode head)
+        public static void Print(SinglyLinkedListNode head)
         {
             if (head == null) return;
 

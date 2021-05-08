@@ -1,11 +1,11 @@
 ﻿namespace DataStructures.Linked_Lists
 {
-    class SinglyLL
+    class SinglyLinkedList
     {
-        public SinglyLLNode head;
-        public SinglyLLNode tail;
+        public SinglyLinkedListNode head;
+        public SinglyLinkedListNode tail;
 
-        public SinglyLL()
+        public SinglyLinkedList()
         {
             head = null;
             tail = null;
@@ -13,7 +13,7 @@
 
         public void InsertNode(int nodeData)
         {
-            SinglyLLNode node = new SinglyLLNode(nodeData);
+            SinglyLinkedListNode node = new SinglyLinkedListNode(nodeData);
 
             if (head == null)
             {

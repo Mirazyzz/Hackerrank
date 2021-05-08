@@ -1,11 +1,11 @@
 ﻿namespace DataStructures.Linked_Lists
 {
-    class SinglyLLNode
+    class SinglyLinkedListNode
     {
         public int data;
-        public SinglyLLNode next;
+        public SinglyLinkedListNode next;
 
-        public SinglyLLNode(int nodeData)
+        public SinglyLinkedListNode(int nodeData)
         {
             data = nodeData;
             next = null;

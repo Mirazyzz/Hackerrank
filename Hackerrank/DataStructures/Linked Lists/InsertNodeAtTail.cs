@@ -2,12 +2,12 @@
 {
     class InsertNodeAtTail
     {
-        public static SinglyLLNode InsertNodeTail(SinglyLLNode node, int data)
+        public static SinglyLinkedListNode InsertNodeTail(SinglyLinkedListNode node, int data)
         {
-            if (node == null) return new SinglyLLNode(data);
+            if (node == null) return new SinglyLinkedListNode(data);
 
             var temp = node;
-            var newNode = new SinglyLLNode(data);
+            var newNode = new SinglyLinkedListNode(data);
 
             while (temp.next != null)
             {
